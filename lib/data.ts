@@ -1,10 +1,9 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import discordRegisterBotImg from "@/public/discord-register-bot.jpeg";
+import tweetRandomProgrammerQuoteImg from "@/public/tweet-random-programmer-quote.jpeg";
+import chatGptCoptItImg from "@/public/chat-gpt-copy-it.jpeg";
 
 export const links = [
   {
@@ -35,52 +34,44 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Kodluyoruz - Associate Team Member",
+    location: "İstanbul, Turkey (Full Time - Remote)",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Kodluyoruz is a social enterprise. I am contributing to technological education and development.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Jul 2023 - Present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Zencir Software - Team Lead",
+    location: "Adana, Turkey (Freelance)",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I lead our online services and work closely with clients through popular freelancer websites such as Bionluk. We specialize in web design and corporate identity services.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Apr 2022 - Jan 2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Discord Register Bot",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A open source Discord bot that allows users to register to a server using a registration code and assign roles to themselves. New registration codes can be generated, and log, moderation, and registration channels can be designated. In this project, I contributed by developing the backend commands and frontend styling.",
+    tags: ["Node.js", "Javascript", "MongoDB"],
+    imageUrl: discordRegisterBotImg,
   },
   {
-    title: "rmtDev",
+    title: "Tweet Random Programmer Quote",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "This project was designed with Figma and after design process end, I coded with using Next.js and Tailwind.css. It is fully responsive and open source.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux", "Figma"],
+    imageUrl: tweetRandomProgrammerQuoteImg,
   },
   {
-    title: "Word Analytics",
+    title: "ChatGPT CopyIt",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "It adds a copy to clipboard button end of each answer. Also, it shows word and character counter. It is published on Chrome Web Store. I used vanilla JavaScript to do it.",
+    tags: ["JavaScript"],
+    imageUrl: chatGptCoptItImg,
   },
 ] as const;
 
@@ -94,14 +85,16 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
+  "Node.js",
+  "Bootstrap",
   "Express",
   "PostgreSQL",
   "Python",
-  "Django",
+  "Unity",
+  "C#",
+  "Firebase",
+  "MongoDB",
   "Framer Motion",
+  "Agile",
 ] as const;
