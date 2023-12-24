@@ -86,7 +86,6 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "Redux",
-  "Node.js",
   "Bootstrap",
   "Express",
   "PostgreSQL",
