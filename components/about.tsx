@@ -20,7 +20,7 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
         As a <span className="font-medium">Computer Engineering student</span>{" "}
-        at Cukurova University, I'm deeply involved in enhancing my skills in a
+        at Çukurova University, I'm deeply involved in enhancing my skills in a
         variety of programming languages and technologies. My current role as an{" "}
         <span className="font-medium">Associate Team Member</span> at Kodluyoruz
         allows me to actively contribute to technological education and
