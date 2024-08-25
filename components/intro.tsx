@@ -69,7 +69,8 @@ export default function Intro() {
         I'm a <span className="font-bold">full-stack developer</span> and a{" "}
         <span className="font-bold">product manager.</span> I enjoy building{" "}
         <span className="italic">sites & apps</span>. <br />
-        My focus is <span className="underline">Next.js and Blockchain</span>.
+        My focus is{" "}
+        <span className="underline">Next.js, Blockchain and AI</span>.
       </motion.h1>
 
       <motion.div
