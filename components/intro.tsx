@@ -9,7 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import muffafaPhoto from "@/public/Muhammed-Mustafa-Savar.png";
+import muffafaPhoto from "@/public/Muhammed-Mustafa-Savar.jpg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -96,7 +96,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/online-resume-muhammed-mustafa-savar_25.08.2024.pdf"
+          href="/online_muhammed_mustafa_savar_cv_27.08.2024.pdf"
           download
         >
           Download CV{" "}
