@@ -46,7 +46,7 @@ export const experiencesData = [
     location: "İstanbul, Turkey (Full Time - Remote)",
     description: `During my tenure at Kodluyoruz, I played a key role in planning and managing free software training programs for youth, leading the design and implementation of events and curricula. I ensured effective communication and follow-up with participants, contributing to their job placement process and certificate distribution. I also enhanced productivity through tools like Google Docs and Drive and managed technical aspects of face-to-face events. I actively participated in significant collaborations with organizations such as IBM and Microsoft, and led projects like "Kodluyoruz Açık Kaynak" and "Kodluyoruz Harekete Geç," demonstrating my ability to handle both strategic and technical responsibilities effectively.`,
     icon: React.createElement(CgWorkAlt),
-    date: "Jul 2023 - Present",
+    date: "Jul 2023 - Jul 2024",
   },
   {
     title: "Zencir Software - Team Lead",
