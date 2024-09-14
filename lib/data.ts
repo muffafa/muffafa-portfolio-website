@@ -4,6 +4,8 @@ import { FaReact } from "react-icons/fa";
 import discordRegisterBotImg from "@/public/discord-register-bot.jpeg";
 import tweetRandomProgrammerQuoteImg from "@/public/tweet-random-programmer-quote.jpeg";
 import chatGptCoptItImg from "@/public/chat-gpt-copy-it.jpeg";
+import chainiversityImg from "@/public/chainiversity.jpeg";
+import tycheImg from "@/public/tyche.jpeg";
 
 export const links = [
   {
@@ -59,6 +61,42 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Chainiversity",
+    description:
+      "Chainiversity is an interactive, quest-based platform for developers aiming to excel in Solidity and Chainlink. Developers pass levels and submit solutions on-chain to earn NFT certificates. I gained experience with Wagmi Hooks and Rainbowkit, while also honing my skills in Next.js and Tailwind CSS.",
+    tags: [
+      "React",
+      "Next.js",
+      "Tailwind",
+      "Wagmi Hooks",
+      "Rainbowkit",
+      "Solidity",
+      "Chainlink",
+    ],
+    imageUrl: chainiversityImg,
+    link: "https://devpost.com/software/chainiversity",
+    ribbon: {
+      text: "Second Place ($4000)",
+      type: "winner",
+      competitionName: "Chainlink Hackathon",
+      awardDate: "June 2023",
+    },
+  },
+  {
+    title: "Tyche",
+    description:
+      "As the team lead for Tyche, I managed the development of an innovative platform for monitoring addresses and transactions across multiple blockchain networks (Bitcoin, Ethereum, Solana, etc.). I designed the UI/UX and developed the front-end interface. Tyche simplifies blockchain tracking with user-friendly features like assigning temporary nicknames to wallet addresses and providing real-time updates on transaction fees and network status.",
+    tags: ["React", "Blockchain", "UI/UX", "Front-end"],
+    imageUrl: tycheImg,
+    link: "https://github.com/cukurovablock/tyche",
+    ribbon: {
+      text: "Best Presentation",
+      type: "winner",
+      competitionName: "Teknofest - Blockchain Competition",
+      awardDate: "September 2023",
+    },
+  },
   {
     title: "Discord Register Bot",
     description:
