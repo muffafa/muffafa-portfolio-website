@@ -2,21 +2,21 @@
 
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
-import Ribbon from './ribbon';
+import Ribbon from "./ribbon";
 
 type RibbonProps = {
   text: string;
-  type: 'new' | 'featured' | 'popular';
+  type: "new" | "featured" | "popular";
 };
 
 type ProjectProps = {
   title: string;
   description: string;
   tags: readonly string[];
-  imageUrl: string;
+  imageUrl: StaticImageData;
   link: string;
   ribbon?: RibbonProps | null;
 };

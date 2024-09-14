@@ -5,14 +5,14 @@ import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
-import StaticImageData from "next/image";
+import { StaticImageData } from "next/image";
 
 // Add this interface above the Projects component
 interface ProjectProps {
   title: string;
   description: string;
   tags: readonly string[];
-  imageUrl: string | StaticImageData;
+  imageUrl: StaticImageData;
   link: string;
   ribbon: { text: string; type: string } | null;
 }
