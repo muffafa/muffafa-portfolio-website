@@ -65,6 +65,8 @@ export const projectsData = [
       "A open source Discord bot that allows users to register to a server using a registration code and assign roles to themselves. New registration codes can be generated, and log, moderation, and registration channels can be designated. In this project, I contributed by developing the backend commands and frontend styling.",
     tags: ["Node.js", "Javascript", "MongoDB"],
     imageUrl: discordRegisterBotImg,
+    link: "https://github.com/muffafa/discord-register-bot",
+    ribbon: { text: "Featured", type: "featured" },
   },
   {
     title: "Tweet Random Programmer Quote",
@@ -72,6 +74,8 @@ export const projectsData = [
       "This project was designed with Figma and after design process end, I coded with using Next.js and Tailwind.css. It is fully responsive and open source.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux", "Figma"],
     imageUrl: tweetRandomProgrammerQuoteImg,
+    link: "https://tweet-random-programming-quote.vercel.app/",
+    ribbon: null,
   },
   {
     title: "ChatGPT CopyIt",
@@ -79,6 +83,8 @@ export const projectsData = [
       "It adds a copy to clipboard button end of each answer. Also, it shows word and character counter. It is published on Chrome Web Store. I used vanilla JavaScript to do it.",
     tags: ["JavaScript"],
     imageUrl: chatGptCoptItImg,
+    link: "https://chromewebstore.google.com/detail/chatgpt-copyit/ogakgacjkoojmdahpelppalilhhplnbe",
+    ribbon: { text: "Popular", type: "popular" },
   },
 ] as const;
 
