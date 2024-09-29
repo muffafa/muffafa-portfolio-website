@@ -86,7 +86,7 @@ export const projectsData = [
   {
     title: "Tyche",
     description:
-      "As the team lead for Tyche, I managed the development of an innovative platform for monitoring addresses and transactions across multiple blockchain networks (Bitcoin, Ethereum, Solana, etc.). I designed the UI/UX and developed the front-end interface. Tyche simplifies blockchain tracking with user-friendly features like assigning temporary nicknames to wallet addresses and providing real-time updates on transaction fees and network status.",
+      "As the team lead for Tyche, I managed the development of an innovative platform for monitoring addresses and transactions across multiple blockchain networks (Bitcoin, Ethereum, Solana, etc.). I designed the UI/UX and developed the front-end interface.",
     tags: ["React", "Blockchain", "UI/UX", "Front-end"],
     imageUrl: tycheImg,
     link: "https://github.com/cukurovablock/tyche",
