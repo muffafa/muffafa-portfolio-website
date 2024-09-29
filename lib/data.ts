@@ -41,7 +41,7 @@ export const experiencesData = [
     description:
       "During my internship at Borda Tech, I played a crucial role in the development of an AI-powered assistant for their healthcare product, Quattro. I gained hands-on experience in product management, including defining product vision, conducting competitor analysis, and engaging in cross-functional collaboration. My work involved stakeholder management, roadmapping, and establishing KPIs, ensuring a comprehensive approach to product development. I also developed a deep understanding of IoT applications in healthcare, software testing, and UX design, which enhanced my ability to contribute effectively to the project.",
     icon: React.createElement(CgWorkAlt),
-    date: "Jul 2024 - Present",
+    date: "Jul 2024 - Sep 2024",
   },
   {
     title: "Kodluyoruz - Associate Team Member",
