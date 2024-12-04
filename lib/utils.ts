@@ -24,3 +24,18 @@ export const getErrorMessage = (error: unknown): string => {
 
   return message;
 };
+
+export function getRedirectUrl(url: string): string {
+  try {
+    const urlObject = new URL(url);
+    // Check if the URL is external (not our domain)
+    if (urlObject.host !== window.location.host) {
+      // Return the redirect path
+      return `/go/external?url=${encodeURIComponent(url)}`;
+    }
+  } catch (e) {
+    // If URL parsing fails, return the original URL
+    console.warn('Invalid URL:', url);
+  }
+  return url;
+}

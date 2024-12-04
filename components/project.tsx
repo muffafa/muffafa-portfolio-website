@@ -6,6 +6,7 @@ import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
 import Ribbon from "./ribbon";
+import SafeLink from "./safe-link";
 
 type RibbonProps = {
   text: string;
@@ -48,14 +49,11 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <a
+      <SafeLink
         href={link}
-        target="_blank"
-        rel="noopener noreferrer"
         className="cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg"
       >
         <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[30rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-          {/* Ribbon - only rendered if ribbon prop is provided */}
           {ribbon && (
             <Ribbon
               type={ribbon.type}
@@ -92,20 +90,20 @@ export default function Project({
             alt="Project I worked on"
             quality={95}
             className="absolute hidden sm:block top-16 -right-60 w-[30rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2x
+            transition 
+            group-hover:scale-[1.04]
+            group-hover:-translate-x-3
+            group-hover:translate-y-3
+            group-hover:-rotate-2x
 
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
+            group-even:group-hover:translate-x-3
+            group-even:group-hover:translate-y-3
+            group-even:group-hover:rotate-2
 
-        group-even:right-[initial] group-even:-left-40"
+            group-even:right-[initial] group-even:-left-40"
           />
         </section>
-      </a>
+      </SafeLink>
     </motion.div>
   );
 }

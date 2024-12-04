@@ -11,4 +11,9 @@ export const redirects: RedirectConfig = {
   cv: "/cv_online_muhammed_mustafa_savar.pdf",
   ai: "https://docs.google.com/forms/d/e/1FAIpQLSdXbpnwXoEHnB7AHYQo3Qd60sz1Jprok_3DMQJsJQQX7MA6PA/viewform",
   // Add more redirects as needed
-}; 
+};
+
+// Helper function to get full URLs for redirects
+export function getRedirectPath(key: string): string {
+  return redirects[key] ? `/go/${key}` : '';
+} 
