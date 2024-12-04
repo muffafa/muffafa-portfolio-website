@@ -30,22 +30,22 @@ export default function Redirect({ to, timeout = 5000 }: RedirectProps) {
   }, [to, timeout]);
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-white dark:bg-gray-950">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-white dark:bg-gray-950 px-4">
       <div className="mb-8">
         <Image
           src={muffafaLogo}
           alt="Muffafa Logo"
-          width="150"
-          height="150"
+          width="120"
+          height="120"
           quality="95"
           priority={true}
-          className="rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+          className="rounded-full object-cover border-[0.35rem] border-white shadow-xl sm:w-[150px] sm:h-[150px]"
         />
       </div>
       
-      <div className="text-center px-4">
-        <div className="flex items-center justify-center gap-4 mb-4">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+      <div className="text-center w-full max-w-2xl">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-4">
+          <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 dark:text-white whitespace-nowrap">
             Redirecting in {counter}s...
           </h1>
           <div className="w-16 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
@@ -55,9 +55,9 @@ export default function Redirect({ to, timeout = 5000 }: RedirectProps) {
             ></div>
           </div>
         </div>
-        <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
+        <p className="text-base sm:text-xl text-gray-600 dark:text-gray-300 mb-6">
           You are being redirected to{" "}
-          <a href={to} className="text-blue-500 hover:underline">
+          <a href={to} className="text-blue-500 hover:underline break-all">
             {to}
           </a>
         </p>
