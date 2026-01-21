@@ -7,9 +7,11 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import { Turnstile } from "@marsidev/react-turnstile";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const [token, setToken] = React.useState("");
 
   return (
     <motion.section
@@ -41,7 +43,7 @@ export default function Contact() {
 
       <form
         className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
+        action={async (formData: FormData) => {
           const { data, error } = await sendEmail(formData);
 
           if (error) {
@@ -67,6 +69,13 @@ export default function Contact() {
           required
           maxLength={5000}
         />
+        <div className="mb-3">
+          <Turnstile
+            siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ""}
+            onSuccess={setToken}
+          />
+        </div>
+        <input type="hidden" name="token" value={token} />
         <SubmitBtn />
       </form>
     </motion.section>
