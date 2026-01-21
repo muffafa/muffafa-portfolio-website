@@ -19,32 +19,22 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        As a <span className="font-medium">Computer Engineering graduate</span>{" "}
-        from Çukurova University, I am currently working as a{" "}
-        <span className="font-medium">Product Manager Intern</span> at Borda
-        Tech. In addition to my role in product management, I am also a{" "}
-        <span className="font-medium">Developer</span> with expertise in a
-        variety of programming languages and technologies. My experience spans{" "}
-        <span className="font-medium">
-          JavaScript, Java, C#, Python, Firebase, MongoDB, TypeScript, React,
-          Next.js, and Node.js
-        </span>
-        , among others. I am deeply committed to enhancing my skills and
-        contributing to both technological development and effective product
-        management.
+        I am a <span className="font-medium">Computer Engineering graduate</span> from{" "}
+        <span className="font-medium">Cukurova University</span>, focused on designing{" "}
+        <span className="font-medium">web-based AI solutions</span> such as{" "}
+        <span className="font-medium">Retrieval Augmented Generation (RAG)</span> and{" "}
+        <span className="font-medium">AI agents</span>. I build scalable systems by
+        combining modern front-end frameworks with intelligent back-end services.
       </p>
 
       <p>
-        <span className="italic">In my personal time</span>, I engage in content
-        creation across various platforms, including Twitter, YouTube, Medium,
-        and LinkedIn. I'm passionate about{" "}
-        <span className="font-medium">
-          Blockchain, Artificial Intelligence (AI) and web technologies
-        </span>
-        , as well as exploring the realms of history and philosophy. Playing the
-        piano and interactive gaming are my go-to activities for relaxation and
-        fun.
+        <span className="italic">Beyond development</span>, I have hands-on experience
+        in <span className="font-medium">DevRel</span> and{" "}
+        <span className="font-medium">Product Management</span>. I actively create
+        technical content on social media. Outside of work, I enjoy exploring history,
+        philosophy, and playing the piano.
       </p>
+
     </motion.section>
   );
 }
