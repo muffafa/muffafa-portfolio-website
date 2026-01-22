@@ -19,7 +19,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center scroll-mt-28"
       initial={{
         opacity: 0,
       }}
@@ -30,7 +30,7 @@ export default function Contact() {
         duration: 1,
       }}
       viewport={{
-        once: true,
+        once: false,
       }}
     >
       <SectionHeading>Contact me</SectionHeading>

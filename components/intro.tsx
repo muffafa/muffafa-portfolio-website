@@ -27,7 +27,9 @@ export default function Intro() {
           <motion.h1
             className="mb-10 mt-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
             initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.6 }}
           >
             <span className="font-bold">
               Hello, I'm Muhammed Mustafa Savar.
@@ -41,10 +43,9 @@ export default function Intro() {
           <motion.div
             className="flex flex-col sm:flex-row items-center gap-4 text-lg font-medium"
             initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.1,
-            }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.6 }}
           >
             <SafeLink
               href="https://linktr.ee/muffafa"
@@ -87,10 +88,11 @@ export default function Intro() {
         <div className="relative flex-shrink-0">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false }}
             transition={{
               type: "tween",
-              duration: 0.2,
+              duration: 0.6,
             }}
           >
             <Image
@@ -107,7 +109,13 @@ export default function Intro() {
           <motion.span
             className="absolute bottom-4 right-4 text-6xl"
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1, rotate: [0, 14, -8, 14, -4, 10, 0, 0] }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false }}
+            animate={{ 
+              opacity: 1, 
+              scale: 1, 
+              rotate: [0, 14, -8, 14, -4, 10, 0, 0] 
+            }}
             transition={{
               type: "spring",
               stiffness: 125,
