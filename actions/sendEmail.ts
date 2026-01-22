@@ -4,8 +4,13 @@ import React from "react";
 import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
+import { headers } from "next/headers";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+
+// Simple in-memory rate limiter
+const rateLimitMap = new Map<string, number>();
+const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
@@ -23,6 +28,18 @@ export const sendEmail = async (formData: FormData) => {
       error: "Invalid message",
     };
   }
+
+  // Rate limiting
+  const ip = headers().get("x-forwarded-for") || "unknown";
+  const lastAttempt = rateLimitMap.get(ip);
+  const now = Date.now();
+
+  if (lastAttempt && now - lastAttempt < RATE_LIMIT_WINDOW) {
+    return {
+      error: "Please wait a minute before sending another message.",
+    };
+  }
+  rateLimitMap.set(ip, now);
 
   if (!token) {
     return {
